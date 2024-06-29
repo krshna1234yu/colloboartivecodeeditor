@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Real-Time Collaborative Code Editor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.css">
+</head>
+<body>
+    <div id="join-screen">
+        <input type="text" id="userName" placeholder="Enter your name">
+        <button id="join-button">Join</button>
+    </div>
+    <div id="editor-screen" style="display: none;">
+        <div id="left-panel">
+            <div id="dashboard">
+                <div id="file-actions">
+                    <button id="new-file">New File</button>
+                    <input type="file" id="open-file" webkitdirectory directory multiple>
+                    <button id="share-link">Share Link</button>
+                </div>
+                <ul id="file-list"></ul>
+            </div>
+        </div>
+        <div id="right-panel">
+            <div id="main">
+                <div id="users"></div>
+                <div id="editor"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
